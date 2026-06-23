@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>madcok.co — Build with frustration.</title>
+<meta name="description" content="madcok.co builds open-source tools for engineers who ship. Battery-included Go framework (Unicorn), GPS tracking (UniTrack), and more. Business logic first — not boilerplate.">
+<meta name="keywords" content="madcok, open source, go framework, unicorn, unitrack, gps tracking, self-hosted, developer tools, indonesia tech">
+<meta name="author" content="madcok.co">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://madcok.co/">
+<meta property="og:title" content="madcok.co — Build with frustration.">
+<meta property="og:description" content="Open-source tools for engineers who ship. Business logic first — not boilerplate.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://madcok.co/">
+<meta property="og:image" content="https://madcok.co/og-image.png">
+<meta property="og:site_name" content="madcok.co">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="madcok.co — Build with frustration.">
+<meta name="twitter:description" content="Open-source tools for engineers who ship. Business logic first — not boilerplate.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><polygon points='24,2 22,10 26,10' fill='%2338bdf8'/><polygon points='22,10 24,6 26,10' fill='%230369a1'/><polygon points='8,20 11,12 17,20' fill='%23ccddf0'/><polygon points='40,20 37,12 31,20' fill='%23d4e9f7'/><polygon points='17,20 22,10 26,10 31,20' fill='%23eef5fd'/><polygon points='8,20 40,20 42,31 34,43 24,45 14,43 6,31' fill='%23eef5fd'/><ellipse cx='17' cy='27' rx='3' ry='2.5' fill='%230c1a2e'/><ellipse cx='31' cy='27' rx='3' ry='2.5' fill='%230c1a2e'/><circle cx='18' cy='26' r='1' fill='%2338bdf8' opacity='0.8'/><circle cx='32' cy='26' r='1' fill='%2338bdf8' opacity='0.8'/></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #05080f; color: #f0f4f8; scroll-behavior: smooth; }
+  a { text-decoration: none; color: inherit; }
+  @keyframes horn-breathe { 0%, 100% { opacity: 0.18; } 50% { opacity: 0.38; } }
+  @keyframes fade-up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  body { font-family: 'Space Grotesk', sans-serif; -webkit-font-smoothing: antialiased; }
+  nav a:hover { color: #7dd3fc !important; }
+  .cta-btn:hover { background: #7dd3fc !important; }
+  @media (max-width: 768px) {
+    h1 { font-size: 42px !important; }
+    h2 { font-size: 26px !important; }
+    nav { padding: 0 24px !important; }
+    section { padding: 80px 24px !important; }
+    .philo-row { flex-direction: column !important; gap: 16px !important; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "madcok.co",
+  "url": "https://madcok.co",
+  "description": "Open-source tools for engineers who ship. Business logic first — not boilerplate.",
+  "logo": "https://madcok.co/og-image.png",
+  "sameAs": ["https://github.com/madcok-co"],
+  "foundingDate": "2025",
+  "founder": { "@type": "Person", "name": "madcok" },
+  "location": { "@type": "Country", "name": "Indonesia" }
+}
+</script>
+</head>
+<body>
+
+<div style="font-family:'Space Grotesk',sans-serif;background:#05080f;color:#f0f4f8;min-height:100vh;">
+
+  <!-- NAV -->
+  <nav style="position:fixed;top:0;left:0;right:0;z-index:100;height:64px;padding:0 48px;display:flex;align-items:center;justify-content:space-between;background:rgba(5,8,15,0.88);border-bottom:1px solid rgba(56,189,248,0.07);backdrop-filter:blur(16px);">
+    <a href="#" style="display:flex;align-items:center;gap:10px;">
+      <svg viewBox="0 0 120 118" width="26" height="25" style="flex:none;overflow:visible;">
+        <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+        <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+        <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+        <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+        <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+        <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+        <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+        <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+        <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+        <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+        <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+      </svg>
+      <span style="font-size:15px;font-weight:800;letter-spacing:-0.025em;color:#f0f4f8;">madcok<span style="color:#38bdf8;font-weight:400;">.co</span></span>
+    </a>
+    <div style="display:flex;align-items:center;gap:20px;">
+      <a href="https://github.com/madcok-co" target="_blank" rel="noopener" style="font-size:13px;font-weight:600;color:#38bdf8;letter-spacing:0.01em;display:flex;align-items:center;gap:5px;">
+        GitHub
+        <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section style="min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:120px 48px 80px;position:relative;">
+    <div style="position:absolute;top:30%;left:50%;transform:translate(-50%,-50%);width:600px;height:400px;background:radial-gradient(ellipse,rgba(56,189,248,0.06) 0%,transparent 70%);pointer-events:none;"></div>
+
+    <div style="margin-bottom:40px;animation:fade-up 0.8s ease both;">
+      <svg viewBox="0 0 120 118" width="120" height="118" style="overflow:visible;display:block;">
+        <defs>
+          <filter id="hero-glow" x="-100%" y="-100%" width="300%" height="300%">
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <g filter="url(#hero-glow)" style="animation:horn-breathe 3s ease-in-out infinite;">
+          <polygon points="60,4 54,26 66,26" fill="#38bdf8"/>
+        </g>
+        <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+        <polygon points="24,48 29,33 40,48" fill="#38bdf8" opacity="0.15"/>
+        <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+        <polygon points="96,48 91,33 80,48" fill="#38bdf8" opacity="0.15"/>
+        <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+        <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+        <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+        <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+        <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+        <line x1="60" y1="4" x2="60" y2="14" stroke="#bae6fd" stroke-width="0.7" opacity="0.5"/>
+        <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+        <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+        <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+        <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+      </svg>
+    </div>
+
+    <h1 style="font-size:76px;font-weight:800;letter-spacing:-0.045em;line-height:1.0;max-width:760px;animation:fade-up 0.8s 0.1s ease both;">
+      Built<br>with frustration.
+    </h1>
+
+    <p style="font-size:19px;color:#5b8fa8;line-height:1.65;max-width:520px;margin-top:24px;animation:fade-up 0.8s 0.2s ease both;">
+      Years of writing the same boilerplate across different projects led to one conclusion: write
+      <em style="color:#7dd3fc;font-style:normal;">business logic</em>, not infrastructure code.
+    </p>
+
+    <div style="margin-top:44px;animation:fade-up 0.8s 0.3s ease both;">
+      <a href="https://github.com/madcok-co" target="_blank" rel="noopener" class="cta-btn" style="display:inline-flex;align-items:center;gap:8px;padding:14px 28px;background:#38bdf8;color:#030912;font-weight:700;font-size:15px;letter-spacing:-0.01em;border-radius:4px;">
+        View on GitHub
+        <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+
+    <div style="position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;">
+      <div style="width:1px;height:32px;background:linear-gradient(to bottom,transparent,rgba(56,189,248,0.3));"></div>
+      <span style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:#1e3a52;">scroll</span>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section style="padding:120px 48px;border-top:1px solid rgba(56,189,248,0.07);">
+    <div style="max-width:860px;margin:0 auto;">
+      <div style="font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:#38bdf8;margin-bottom:72px;">Philosophy</div>
+
+      <div class="philo-row" style="display:flex;gap:40px;padding:48px 0;border-top:1px solid #0d1a2e;align-items:flex-start;">
+        <div style="font-size:13px;font-weight:700;color:#0f3a54;letter-spacing:0.05em;flex:none;width:40px;padding-top:6px;">01</div>
+        <div style="flex:1;">
+          <h2 style="font-size:36px;font-weight:800;letter-spacing:-0.03em;line-height:1.1;">Write business logic.<br><span style="color:#38bdf8;">Not boilerplate.</span></h2>
+          <p style="font-size:16px;color:#4a7a96;line-height:1.7;margin-top:16px;max-width:580px;">Every project we build starts from the same principle: complexity should be absorbed by tools, not by developers. Focus on solving business problems — not rewriting the same infrastructure for the hundredth time.</p>
+        </div>
+      </div>
+
+      <div class="philo-row" style="display:flex;gap:40px;padding:48px 0;border-top:1px solid #0d1a2e;align-items:flex-start;">
+        <div style="font-size:13px;font-weight:700;color:#0f3a54;letter-spacing:0.05em;flex:none;width:40px;padding-top:6px;">02</div>
+        <div style="flex:1;">
+          <h2 style="font-size:36px;font-weight:800;letter-spacing:-0.03em;line-height:1.1;">Ship products.<br><span style="color:#38bdf8;">Not architecture diagrams.</span></h2>
+          <p style="font-size:16px;color:#4a7a96;line-height:1.7;margin-top:16px;max-width:580px;">If your 200-line microservice needs 47 layers of abstraction, bounded contexts, and a domain expert consultation — you have different problems. We build for engineers with deadlines, not conference slides.</p>
+        </div>
+      </div>
+
+      <div class="philo-row" style="display:flex;gap:40px;padding:48px 0;border-top:1px solid #0d1a2e;align-items:flex-start;">
+        <div style="font-size:13px;font-weight:700;color:#0f3a54;letter-spacing:0.05em;flex:none;width:40px;padding-top:6px;">03</div>
+        <div style="flex:1;">
+          <h2 style="font-size:36px;font-weight:800;letter-spacing:-0.03em;line-height:1.1;">Opinionated<br><span style="color:#38bdf8;">by design.</span></h2>
+          <p style="font-size:16px;color:#4a7a96;line-height:1.7;margin-top:16px;max-width:580px;">These aren't suggestions — they're the result of years of frustration. Use what works for you. If you disagree, that's fine. We don't mass care.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section style="padding:80px 48px 120px;border-top:1px solid rgba(56,189,248,0.07);">
+    <div style="max-width:860px;margin:0 auto;">
+      <div style="font-size:11px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:#38bdf8;margin-bottom:48px;">Projects</div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;">
+        <!-- Unicorn -->
+        <a href="https://github.com/madcok-co/unicorn" target="_blank" rel="noopener" style="display:block;padding:32px;background:#0a1020;border:1px solid rgba(56,189,248,0.08);hover:border-color:rgba(56,189,248,0.25);">
+          <div style="font-size:13px;font-weight:700;color:#f0f4f8;margin-bottom:8px;">🦄 Unicorn</div>
+          <div style="font-size:14px;color:#5b8fa8;line-height:1.6;">Batteries-included Go framework. 38ns/op, zero-allocation context pooling. Write business logic — not boilerplate.</div>
+          <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:11px;padding:3px 10px;background:rgba(56,189,248,0.08);color:#38bdf8;border:1px solid rgba(56,189,248,0.15);">Go</span>
+            <span style="font-size:11px;padding:3px 10px;background:rgba(16,185,129,0.08);color:#10B981;border:1px solid rgba(16,185,129,0.15);">MIT</span>
+            <span style="font-size:11px;padding:3px 10px;background:rgba(56,189,248,0.05);color:#7dd3fc;border:1px solid rgba(56,189,248,0.1);">v0.5.2</span>
+          </div>
+        </a>
+
+        <!-- UniTrack -->
+        <a href="https://github.com/madcok-co/unitrack" target="_blank" rel="noopener" style="display:block;padding:32px;background:#0a1020;border:1px solid rgba(56,189,248,0.08);hover:border-color:rgba(56,189,248,0.25);">
+          <div style="font-size:13px;font-weight:700;color:#f0f4f8;margin-bottom:8px;">📍 UniTrack</div>
+          <div style="font-size:14px;color:#5b8fa8;line-height:1.6;">Self-hosted GPS tracking for anything that moves. Device-agnostic, real-time feed, geofence engine. Built on Unicorn.</div>
+          <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap;">
+            <span style="font-size:11px;padding:3px 10px;background:rgba(56,189,248,0.08);color:#38bdf8;border:1px solid rgba(56,189,248,0.15);">Go</span>
+            <span style="font-size:11px;padding:3px 10px;background:rgba(245,158,11,0.08);color:#F59E0B;border:1px solid rgba(245,158,11,0.15);">Flutter</span>
+            <span style="font-size:11px;padding:3px 10px;background:rgba(16,185,129,0.08);color:#10B981;border:1px solid rgba(16,185,129,0.15);">MIT</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="padding:36px 48px;border-top:1px solid rgba(56,189,248,0.07);display:flex;align-items:center;justify-content:space-between;">
+    <span style="font-size:12px;color:#1e3a52;letter-spacing:0.03em;">&copy; 2026 madcok.co &middot; Indonesia &middot; MIT License</span>
+    <div style="display:flex;gap:24px;align-items:center;">
+      <a href="https://github.com/madcok-co" target="_blank" rel="noopener" style="font-size:13px;color:#2d5f7a;font-weight:500;">GitHub</a>
+      <a href="https://madcok.co" style="font-size:13px;color:#2d5f7a;font-weight:500;">madcok.co</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
