@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 500px; height: 500px; background: #05080f; }
+  .wrap { width: 500px; height: 500px; display: flex; align-items: center; justify-content: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <svg viewBox="0 0 120 118" width="340" height="334" style="overflow:visible; display:block;">
+    <defs>
+      <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+        <feGaussianBlur stdDeviation="6" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+    <g opacity="0.22" filter="url(#glow)">
+      <polygon points="60,4 54,26 66,26" fill="#38bdf8"/>
+    </g>
+    <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+    <polygon points="24,48 29,33 40,48" fill="#38bdf8" opacity="0.18"/>
+    <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+    <polygon points="96,48 91,33 80,48" fill="#38bdf8" opacity="0.18"/>
+    <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+    <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+    <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+    <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+    <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+    <line x1="60" y1="4" x2="60" y2="14" stroke="#bae6fd" stroke-width="0.7" opacity="0.5"/>
+    <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+    <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+    <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+    <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+  </svg>
+</div>
+</body>
+</html>

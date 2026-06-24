@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>body { margin: 0; padding: 0; background: #080c16; }</style>
+</helmet>
+
+<div style="min-width:100%; min-height:100vh; width:max-content; background:#080c16; padding:60px; box-sizing:border-box; font-family:'Space Grotesk',sans-serif;">
+
+  <!-- Header -->
+  <div style="margin-bottom:52px; display:flex; align-items:flex-end; justify-content:space-between; max-width:1420px;">
+    <div>
+      <div style="font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#52525b; margin-bottom:6px;">Brand Identity</div>
+      <div style="font-size:28px; font-weight:800; color:#f4f4f5; letter-spacing:-0.03em;">madcok.co</div>
+    </div>
+    <div style="font-size:11px; color:#3f3f46; letter-spacing:0.05em;">Logo System · June 2026</div>
+  </div>
+
+  <!-- Row 1 -->
+  <div style="display:flex; gap:32px; align-items:flex-start;">
+
+    <!-- Frame 1: Avatar -->
+    <div style="flex:none;">
+      <div style="font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#3f3f46; margin-bottom:10px;">Icon Mark · Avatar</div>
+      <div style="display:flex; flex-direction:column; gap:16px; align-items:center;">
+        <div style="width:300px; height:300px; background:#05080f; border-radius:10px; display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 1px #0d1a2e;">
+          <svg viewBox="0 0 120 118" width="178" height="175" style="overflow:visible;">
+            <defs>
+              <filter id="glow-lg" x="-80%" y="-80%" width="260%" height="260%">
+                <feGaussianBlur stdDeviation="6" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g opacity="0.2" filter="url(#glow-lg)">
+              <polygon points="60,4 54,26 66,26" fill="#38bdf8"/>
+            </g>
+            <!-- LEFT EAR -->
+            <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+            <polygon points="24,48 29,33 40,48" fill="#38bdf8" opacity="0.18"/>
+            <!-- RIGHT EAR -->
+            <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+            <polygon points="96,48 91,33 80,48" fill="#38bdf8" opacity="0.18"/>
+            <!-- FOREHEAD -->
+            <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+            <!-- FACE -->
+            <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+            <!-- HORN shadow face -->
+            <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+            <!-- HORN lit face -->
+            <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+            <!-- HORN base -->
+            <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+            <line x1="60" y1="4" x2="60" y2="14" stroke="#bae6fd" stroke-width="0.7" opacity="0.5"/>
+            <!-- EYES -->
+            <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+            <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+            <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.78"/>
+            <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.78"/>
+          </svg>
+        </div>
+        <!-- Circle crop sizes -->
+        <div style="display:flex; align-items:center; gap:14px;">
+          <div style="width:72px; height:72px; border-radius:50%; background:#05080f; overflow:hidden; display:flex; align-items:center; justify-content:center; border:2px solid #0d1a2e;">
+            <svg viewBox="0 0 120 118" width="60" height="59">
+              <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+              <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+              <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+              <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+              <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+              <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+              <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+              <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+              <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+              <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+              <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+            </svg>
+          </div>
+          <div style="width:44px; height:44px; border-radius:50%; background:#05080f; overflow:hidden; display:flex; align-items:center; justify-content:center; border:1px solid #0d1a2e;">
+            <svg viewBox="0 0 120 118" width="36" height="35">
+              <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+              <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+              <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+              <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+              <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+              <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+              <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+              <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+              <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+            </svg>
+          </div>
+          <div style="font-size:10px; color:#3f3f46; line-height:1.55;">72px · 44px<br>circle crop</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lockups column -->
+    <div style="flex:none;">
+      <div style="font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#3f3f46; margin-bottom:10px;">Horizontal · Dark</div>
+      <div style="width:540px; height:178px; background:#05080f; border-radius:10px; display:flex; align-items:center; justify-content:center; gap:18px; box-shadow:0 0 0 1px #0d1a2e;">
+        <svg viewBox="0 0 120 118" width="54" height="53" style="overflow:visible; flex:none;">
+          <defs>
+            <filter id="glow-h1" x="-80%" y="-80%" width="260%" height="260%">
+              <feGaussianBlur stdDeviation="5" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <g opacity="0.22" filter="url(#glow-h1)">
+            <polygon points="60,4 54,26 66,26" fill="#38bdf8"/>
+          </g>
+          <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+          <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+          <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+          <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+          <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+          <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+          <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+          <line x1="60" y1="4" x2="60" y2="14" stroke="#bae6fd" stroke-width="0.8" opacity="0.45"/>
+          <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+          <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+          <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.75"/>
+          <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.75"/>
+        </svg>
+        <div style="line-height:1; letter-spacing:-0.035em;">
+          <span style="font-size:50px; font-weight:800; color:#f4f4f5;">madcok</span><span style="font-size:36px; font-weight:400; color:#38bdf8;">.co</span>
+        </div>
+      </div>
+
+      <div style="font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#3f3f46; margin-bottom:10px; margin-top:24px;">Horizontal · Light</div>
+      <div style="width:540px; height:178px; background:#fafafa; border-radius:10px; display:flex; align-items:center; justify-content:center; gap:18px; box-shadow:0 0 0 1px #e4e4e7;">
+        <svg viewBox="0 0 120 118" width="54" height="53" style="overflow:visible; flex:none;">
+          <polygon points="20,50 28,30 44,50" fill="#0b1628"/>
+          <polygon points="100,50 92,30 76,50" fill="#0b1628"/>
+          <polygon points="44,50 54,26 66,26 76,50" fill="#05080f"/>
+          <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#05080f"/>
+          <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+          <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+          <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+          <ellipse cx="42" cy="68" rx="7" ry="6" fill="#eef5fd"/>
+          <ellipse cx="78" cy="68" rx="7" ry="6" fill="#eef5fd"/>
+          <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.85"/>
+          <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.85"/>
+        </svg>
+        <div style="line-height:1; letter-spacing:-0.035em;">
+          <span style="font-size:50px; font-weight:800; color:#09090b;">madcok</span><span style="font-size:36px; font-weight:400; color:#38bdf8;">.co</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column -->
+    <div style="flex:none; display:flex; flex-direction:column; gap:24px;">
+
+      <!-- Stacked -->
+      <div>
+        <div style="font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#3f3f46; margin-bottom:10px;">Stacked</div>
+        <div style="width:220px; height:220px; background:#05080f; border-radius:10px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; box-shadow:0 0 0 1px #0d1a2e;">
+          <svg viewBox="0 0 120 118" width="84" height="82" style="overflow:visible;">
+            <defs>
+              <filter id="glow-st" x="-80%" y="-80%" width="260%" height="260%">
+                <feGaussianBlur stdDeviation="5" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <g opacity="0.2" filter="url(#glow-st)">
+              <polygon points="60,4 54,26 66,26" fill="#38bdf8"/>
+            </g>
+            <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+            <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+            <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+            <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+            <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+            <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+            <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+            <line x1="60" y1="4" x2="60" y2="14" stroke="#bae6fd" stroke-width="0.7" opacity="0.4"/>
+            <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+            <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+            <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.75"/>
+            <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.75"/>
+          </svg>
+          <div style="text-align:center; letter-spacing:-0.025em; line-height:1.05;">
+            <div style="font-size:22px; font-weight:800; color:#f4f4f5;">madcok</div>
+            <div style="font-size:16px; font-weight:400; color:#38bdf8;">.co</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colors -->
+      <div>
+        <div style="font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#3f3f46; margin-bottom:10px;">Color System</div>
+        <div style="background:#05080f; border-radius:10px; padding:18px; box-shadow:0 0 0 1px #0d1a2e; display:flex; flex-direction:column; gap:10px;">
+          <div style="display:flex; gap:8px; align-items:center;">
+            <div style="width:36px; height:36px; background:#05080f; border-radius:4px; border:1px solid #0d1a2e; flex:none;"></div>
+            <div><div style="font-size:10px; font-family:monospace; color:#71717a;">#05080f</div><div style="font-size:9px; color:#3f3f46;">Background</div></div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <div style="width:36px; height:36px; background:#0f172a; border-radius:4px; flex:none;"></div>
+            <div><div style="font-size:10px; font-family:monospace; color:#71717a;">#0f172a</div><div style="font-size:9px; color:#3f3f46;">Horn shadow</div></div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <div style="width:36px; height:36px; background:#0369a1; border-radius:4px; flex:none;"></div>
+            <div><div style="font-size:10px; font-family:monospace; color:#71717a;">#0369a1</div><div style="font-size:9px; color:#3f3f46;">Horn mid</div></div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <div style="width:36px; height:36px; background:#38bdf8; border-radius:4px; flex:none;"></div>
+            <div><div style="font-size:10px; font-family:monospace; color:#71717a;">#38bdf8</div><div style="font-size:9px; color:#3f3f46;">Primary orange</div></div>
+          </div>
+          <div style="display:flex; gap:8px; align-items:center;">
+            <div style="width:36px; height:36px; background:#eef5fd; border-radius:4px; flex:none;"></div>
+            <div><div style="font-size:10px; font-family:monospace; color:#71717a;">#eef5fd</div><div style="font-size:9px; color:#3f3f46;">Face / white</div></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Row 2 -->
+  <div style="display:flex; gap:32px; align-items:flex-start; margin-top:36px;">
+
+    <!-- GitHub mockup -->
+    <div style="flex:none; width:580px;">
+      <div style="font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#3f3f46; margin-bottom:10px;">In Context — GitHub Org Profile</div>
+      <div style="background:#0d1117; border-radius:10px; overflow:hidden; box-shadow:0 0 0 1px #21262d; font-family:'-apple-system','BlinkMacSystemFont','Segoe UI',sans-serif;">
+        <div style="background:#161b22; padding:10px 16px; display:flex; align-items:center; gap:8px; border-bottom:1px solid #21262d;">
+          <div style="width:8px; height:8px; border-radius:50%; background:#ff5f57;"></div>
+          <div style="width:8px; height:8px; border-radius:50%; background:#febc2e;"></div>
+          <div style="width:8px; height:8px; border-radius:50%; background:#28c840;"></div>
+          <div style="margin-left:8px; font-size:11px; color:#7d8590;">github.com/madcok-co</div>
+        </div>
+        <div style="padding:28px; display:flex; gap:20px; align-items:flex-start;">
+          <div style="width:100px; height:100px; border-radius:50%; background:#05080f; overflow:hidden; display:flex; align-items:center; justify-content:center; flex:none; border:2px solid #21262d;">
+            <svg viewBox="0 0 120 118" width="70" height="69">
+              <polygon points="20,50 28,30 44,50" fill="#ccddf0"/>
+              <polygon points="100,50 92,30 76,50" fill="#d4e9f7"/>
+              <polygon points="44,50 54,26 66,26 76,50" fill="#eef5fd"/>
+              <polygon points="20,50 100,50 104,78 86,108 60,114 34,108 16,78" fill="#eef5fd"/>
+              <polygon points="60,4 54,26 60,14" fill="#0f172a"/>
+              <polygon points="60,4 66,26 60,14" fill="#38bdf8"/>
+              <polygon points="54,26 60,14 66,26" fill="#0369a1"/>
+              <ellipse cx="42" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+              <ellipse cx="78" cy="68" rx="7" ry="6" fill="#0c1a2e"/>
+              <circle cx="44.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+              <circle cx="80.5" cy="65.5" r="2.5" fill="#38bdf8" opacity="0.8"/>
+            </svg>
+          </div>
+          <div style="padding-top:4px;">
+            <div style="font-size:22px; font-weight:600; color:#f0f6fc; letter-spacing:-0.01em;">madcok.co</div>
+            <div style="font-size:13px; color:#7d8590; margin-top:3px; font-style:italic;">Built with frustration. Shipped with conviction.</div>
+            <div style="display:flex; gap:16px; margin-top:12px;">
+              <span style="font-size:12px; color:#7d8590;">📍 Indonesia</span>
+              <span style="font-size:12px; color:#58a6ff;">🔗 madcok.co</span>
+            </div>
+            <div style="display:flex; gap:6px; margin-top:12px;">
+              <div style="background:#161b22; border:1px solid #30363d; border-radius:6px; padding:3px 10px; font-size:11px; color:#7d8590;">Go</div>
+              <div style="background:#161b22; border:1px solid #30363d; border-radius:6px; padding:3px 10px; font-size:11px; color:#7d8590;">framework</div>
+              <div style="background:#161b22; border:1px solid #30363d; border-radius:6px; padding:3px 10px; font-size:11px; color:#7d8590;">open-source</div>
+            </div>
+          </div>
+        </div>
+        <div style="border-top:1px solid #21262d; padding:14px 28px; display:flex; flex-direction:column; gap:0;">
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 0; border-bottom:1px solid #161b22;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="#7d8590"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Z"/></svg>
+            <span style="font-size:13px; color:#58a6ff; font-family:monospace;">unicorn</span>
+            <span style="font-size:11px; color:#7d8590; margin-left:auto;">Go · ⭐ 2 · 🍴 4</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px; padding:9px 0;">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="#7d8590"><path d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 0 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 1 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5Z"/></svg>
+            <span style="font-size:13px; color:#58a6ff; font-family:monospace;">blueprint</span>
+            <span style="font-size:11px; color:#7d8590; margin-left:auto;">TypeScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Typography + concept -->
+    <div style="flex:none; width:360px;">
+      <div style="font-size:10px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#3f3f46; margin-bottom:10px;">Design Notes</div>
+      <div style="background:#05080f; border-radius:10px; padding:24px; box-shadow:0 0 0 1px #0d1a2e; display:flex; flex-direction:column; gap:18px;">
+        <div>
+          <div style="font-size:9px; color:#3f3f46; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:6px;">Typeface</div>
+          <div style="font-size:22px; font-weight:800; color:#f4f4f5; letter-spacing:-0.03em; line-height:1;">madcok</div>
+          <div style="font-size:16px; font-weight:400; color:#38bdf8; letter-spacing:-0.02em; margin-top:2px;">.co</div>
+          <div style="font-size:11px; color:#3f3f46; margin-top:6px;">Space Grotesk · 800 / 400</div>
+        </div>
+        <div style="border-top:1px solid #0d1a2e; padding-top:16px;">
+          <div style="font-size:9px; color:#3f3f46; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:8px;">Mark concept</div>
+          <div style="font-size:11px; color:#52525b; line-height:1.65;">Geometric unicorn head, front-facing. Faceted horn in orange references the Unicorn framework. Not cute — angular, flat, technical. Reads cleanly at 28px+.</div>
+        </div>
+        <div style="border-top:1px solid #0d1a2e; padding-top:16px;">
+          <div style="font-size:9px; color:#3f3f46; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:8px;">Usage</div>
+          <div style="font-size:11px; color:#52525b; line-height:1.65;">Upload the icon to GitHub org settings → Profile picture. Export at 500×500 PNG from browser dev tools or screenshot.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
