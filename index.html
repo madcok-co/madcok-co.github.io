@@ -1,27 +1,27 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>madcok.co — Lacak armada tanpa ribet server.</title>
+        <title>madcok.co — Build with frustration.</title>
         <meta
             name="description"
-            content="UniTrack by madcok.co — GPS tracking buat armada logistik Indonesia. Antarmuka bahasa Indonesia, bayar pakai rupiah. Self-host gratis selamanya atau cloud mulai Rp 49rb/bulan."
+            content="madcok.co builds open-source tools for engineers who ship. Unicorn Go framework, UniTrack GPS tracking, and more. Business logic first — not boilerplate."
         />
         <meta
             name="keywords"
-            content="unitrack, gps tracking, lacak armada, bukti kirim, PoD, logistik indonesia, self-hosted, open source, madcok, go framework, unicorn"
+            content="madcok, open source, go framework, unicorn, unitrack, gps tracking, self-hosted, developer tools, indonesia tech"
         />
         <meta name="author" content="madcok.co" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://madcok.co/" />
         <meta
             property="og:title"
-            content="madcok.co — UniTrack: Lacak armada tanpa ribet server."
+            content="madcok.co — Build with frustration."
         />
         <meta
             property="og:description"
-            content="GPS tracking buat armada logistik Indonesia. Antarmuka bahasa Indonesia, bayar pakai rupiah. Self-host gratis atau cloud mulai Rp 49rb/bulan."
+            content="Open-source tools for engineers who ship. Business logic first — not boilerplate."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://madcok.co/" />
@@ -30,11 +30,11 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta
             name="twitter:title"
-            content="madcok.co — UniTrack: Lacak armada tanpa ribet server."
+            content="madcok.co — Build with frustration."
         />
         <meta
             name="twitter:description"
-            content="GPS tracking buat armada logistik Indonesia. Antarmuka bahasa Indonesia, bayar pakai rupiah."
+            content="Open-source tools for engineers who ship. Business logic first — not boilerplate."
         />
         <link
             rel="icon"
@@ -92,70 +92,9 @@
             .cta-btn:hover {
                 background: #7dd3fc !important;
             }
-            .feature-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-                gap: 16px;
-                margin-top: 32px;
-            }
-            .feature-card {
-                padding: 20px;
-                background: #0a1020;
-                border: 1px solid rgba(56, 189, 248, 0.08);
-                border-radius: 4px;
-            }
-            .feature-card h3 {
-                font-size: 14px;
-                font-weight: 700;
-                color: #f0f4f8;
-                margin-bottom: 6px;
-            }
-            .feature-card p {
-                font-size: 13px;
-                color: #4a7a96;
-                line-height: 1.5;
-            }
-            .hero-cta-group {
-                display: flex;
-                gap: 12px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .cta-primary {
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                padding: 14px 28px;
-                background: #38bdf8;
-                color: #030912;
-                font-weight: 700;
-                font-size: 15px;
-                letter-spacing: -0.01em;
-                border-radius: 4px;
-            }
-            .cta-primary:hover {
-                background: #7dd3fc;
-            }
-            .cta-secondary {
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                padding: 14px 28px;
-                background: transparent;
-                color: #38bdf8;
-                font-weight: 700;
-                font-size: 15px;
-                letter-spacing: -0.01em;
-                border-radius: 4px;
-                border: 1px solid rgba(56, 189, 248, 0.25);
-            }
-            .cta-secondary:hover {
-                border-color: #38bdf8;
-                background: rgba(56, 189, 248, 0.06);
-            }
             @media (max-width: 768px) {
                 h1 {
-                    font-size: 36px !important;
+                    font-size: 42px !important;
                 }
                 h2 {
                     font-size: 26px !important;
@@ -170,10 +109,6 @@
                     flex-direction: column !important;
                     gap: 16px !important;
                 }
-                .hero-cta-group {
-                    flex-direction: column;
-                    align-items: center;
-                }
             }
         </style>
         <script type="application/ld+json">
@@ -187,13 +122,7 @@
                 "sameAs": ["https://github.com/madcok-co"],
                 "foundingDate": "2025",
                 "founder": { "@type": "Person", "name": "madcok" },
-                "location": { "@type": "Country", "name": "Indonesia" },
-                "knowsAbout": [
-                    "GPS Tracking",
-                    "Fleet Management",
-                    "Logistics",
-                    "Open Source Software"
-                ]
+                "location": { "@type": "Country", "name": "Indonesia" }
             }
         </script>
     </head>
@@ -206,7 +135,6 @@
                 min-height: 100vh;
             "
         >
-            <!-- NAV -->
             <nav
                 style="
                     position: fixed;
@@ -310,9 +238,7 @@
                 </div>
             </nav>
 
-            <!-- UNTRACK HERO -->
             <section
-                id="unitrack-hero"
                 style="
                     min-height: 100vh;
                     display: flex;
@@ -343,28 +269,14 @@
 
                 <div
                     style="
-                        font-size: 11px;
-                        font-weight: 600;
-                        letter-spacing: 0.16em;
-                        text-transform: uppercase;
-                        color: #38bdf8;
-                        margin-bottom: 24px;
+                        margin-bottom: 40px;
                         animation: fade-up 0.8s ease both;
-                    "
-                >
-                    madcok.co presents
-                </div>
-
-                <div
-                    style="
-                        margin-bottom: 32px;
-                        animation: fade-up 0.8s 0.05s ease both;
                     "
                 >
                     <svg
                         viewBox="0 0 120 118"
-                        width="100"
-                        height="98"
+                        width="120"
+                        height="118"
                         style="overflow: visible; display: block"
                     >
                         <defs>
@@ -446,17 +358,15 @@
 
                 <h1
                     style="
-                        font-size: 64px;
+                        font-size: 76px;
                         font-weight: 800;
                         letter-spacing: -0.045em;
-                        line-height: 1.05;
+                        line-height: 1;
                         max-width: 760px;
                         animation: fade-up 0.8s 0.1s ease both;
                     "
                 >
-                    Lacak armada<br /><span style="color: #38bdf8"
-                        >tanpa ribet server.</span
-                    >
+                    Built<br />with frustration.
                 </h1>
 
                 <p
@@ -464,102 +374,43 @@
                         font-size: 19px;
                         color: #5b8fa8;
                         line-height: 1.65;
-                        max-width: 560px;
+                        max-width: 520px;
                         margin-top: 24px;
                         animation: fade-up 0.8s 0.2s ease both;
                     "
                 >
-                    GPS tracking + bukti kirim untuk armada logistik Indonesia.
-                    Antarmuka bahasa Indonesia,
+                    Years of writing the same boilerplate across different
+                    projects led to one conclusion: write
                     <em style="color: #7dd3fc; font-style: normal"
-                        >bayar pakai rupiah.</em
-                    >
-                    Self-host gratis selamanya, atau cloud mulai Rp 49rb/bulan.
+                        >business logic</em
+                    >, not infrastructure code.
                 </p>
 
-                <!-- Feature pills -->
                 <div
                     style="
-                        display: flex;
-                        gap: 10px;
-                        flex-wrap: wrap;
-                        justify-content: center;
-                        margin-top: 24px;
-                        animation: fade-up 0.8s 0.25s ease both;
-                    "
-                >
-                    <span
-                        style="
-                            font-size: 11px;
-                            padding: 4px 12px;
-                            background: rgba(56, 189, 248, 0.07);
-                            color: #7dd3fc;
-                            border: 1px solid rgba(56, 189, 248, 0.12);
-                            border-radius: 3px;
-                        "
-                        >📍 Live map</span
-                    >
-                    <span
-                        style="
-                            font-size: 11px;
-                            padding: 4px 12px;
-                            background: rgba(56, 189, 248, 0.07);
-                            color: #7dd3fc;
-                            border: 1px solid rgba(56, 189, 248, 0.12);
-                            border-radius: 3px;
-                        "
-                        >📸 PoD (photo + GPS)</span
-                    >
-                    <span
-                        style="
-                            font-size: 11px;
-                            padding: 4px 12px;
-                            background: rgba(56, 189, 248, 0.07);
-                            color: #7dd3fc;
-                            border: 1px solid rgba(56, 189, 248, 0.12);
-                            border-radius: 3px;
-                        "
-                        >📱 QR pairing</span
-                    >
-                    <span
-                        style="
-                            font-size: 11px;
-                            padding: 4px 12px;
-                            background: rgba(56, 189, 248, 0.07);
-                            color: #7dd3fc;
-                            border: 1px solid rgba(56, 189, 248, 0.12);
-                            border-radius: 3px;
-                        "
-                        >🚛 Driver mobile app</span
-                    >
-                    <span
-                        style="
-                            font-size: 11px;
-                            padding: 4px 12px;
-                            background: rgba(56, 189, 248, 0.07);
-                            color: #7dd3fc;
-                            border: 1px solid rgba(56, 189, 248, 0.12);
-                            border-radius: 3px;
-                        "
-                        >⭕ Geofence alerts</span
-                    >
-                </div>
-
-                <!-- CTAs -->
-                <div
-                    class="hero-cta-group"
-                    style="
-                        margin-top: 36px;
+                        margin-top: 44px;
                         animation: fade-up 0.8s 0.3s ease both;
                     "
                 >
                     <a
-                        href="https://unitrack.cloud"
+                        href="https://github.com/madcok-co"
                         target="_blank"
                         rel="noopener"
-                        class="cta-primary"
+                        class="cta-btn"
+                        style="
+                            display: inline-flex;
+                            align-items: center;
+                            gap: 8px;
+                            padding: 14px 28px;
+                            background: #38bdf8;
+                            color: #030912;
+                            font-weight: 700;
+                            font-size: 15px;
+                            letter-spacing: -0.01em;
+                            border-radius: 4px;
+                        "
                     >
-                        Coba gratis 14 hari
+                        View on GitHub
                         <svg
                             width="14"
                             height="14"
@@ -574,14 +425,6 @@
                                 stroke-linejoin="round"
                             />
                         </svg>
-                    </a>
-                    <a
-                        href="https://github.com/madcok-co/unitrack"
-                        target="_blank"
-                        rel="noopener"
-                        class="cta-secondary"
-                    >
-                        Gratis selamanya → GitHub
                     </a>
                 </div>
 
@@ -620,7 +463,6 @@
                 </div>
             </section>
 
-            <!-- PHILOSOPHY -->
             <section
                 style="
                     padding: 120px 48px;
@@ -804,7 +646,6 @@
                 </div>
             </section>
 
-            <!-- PROJECTS -->
             <section
                 style="
                     padding: 80px 48px 120px;
@@ -835,12 +676,16 @@
                             gap: 24px;
                         "
                     >
-                        <!-- Unicorn -->
                         <a
                             href="https://github.com/madcok-co/unicorn"
                             target="_blank"
                             rel="noopener"
-                            style="display:block;padding:32px;background:#0a1020;border:1px solid rgba(56,189,248,0.08);hover:border-color:rgba(56,189,248,0.25);"
+                            style="
+                                display: block;
+                                padding: 32px;
+                                background: #0a1020;
+                                border: 1px solid rgba(56, 189, 248, 0.08);
+                            "
                         >
                             <div
                                 style="
@@ -893,26 +738,19 @@
                                     "
                                     >MIT</span
                                 >
-                                <span
-                                    style="
-                                        font-size: 11px;
-                                        padding: 3px 10px;
-                                        background: rgba(56, 189, 248, 0.05);
-                                        color: #7dd3fc;
-                                        border: 1px solid
-                                            rgba(56, 189, 248, 0.1);
-                                    "
-                                    >v0.5.2</span
-                                >
                             </div>
                         </a>
 
-                        <!-- UniTrack -->
                         <a
                             href="https://github.com/madcok-co/unitrack"
                             target="_blank"
                             rel="noopener"
-                            style="display:block;padding:32px;background:#0a1020;border:1px solid rgba(56,189,248,0.08);hover:border-color:rgba(56,189,248,0.25);"
+                            style="
+                                display: block;
+                                padding: 32px;
+                                background: #0a1020;
+                                border: 1px solid rgba(56, 189, 248, 0.08);
+                            "
                         >
                             <div
                                 style="
@@ -931,10 +769,9 @@
                                     line-height: 1.6;
                                 "
                             >
-                                GPS tracking untuk armada logistik Indonesia.
-                                Live map, PoD (foto+GPS+waktu), geofence, driver
-                                app. Self-host gratis atau cloud mulai Rp
-                                49rb/bulan.
+                                Open-core GPS tracking. Self-hosted free +
+                                unlimited. Managed cloud from Rp 99rb/month.
+                                NMEA, MQTT, geofencing, Proof of Delivery.
                             </div>
                             <div
                                 style="
@@ -944,6 +781,28 @@
                                     flex-wrap: wrap;
                                 "
                             >
+                                <span
+                                    style="
+                                        font-size: 11px;
+                                        padding: 3px 10px;
+                                        background: rgba(56, 189, 248, 0.08);
+                                        color: #38bdf8;
+                                        border: 1px solid
+                                            rgba(56, 189, 248, 0.15);
+                                    "
+                                    >Go</span
+                                >
+                                <span
+                                    style="
+                                        font-size: 11px;
+                                        padding: 3px 10px;
+                                        background: rgba(245, 158, 11, 0.08);
+                                        color: #f59e0b;
+                                        border: 1px solid
+                                            rgba(245, 158, 11, 0.15);
+                                    "
+                                    >Flutter</span
+                                >
                                 <span
                                     style="
                                         font-size: 11px;
@@ -959,21 +818,10 @@
                                     style="
                                         font-size: 11px;
                                         padding: 3px 10px;
-                                        background: rgba(56, 189, 248, 0.08);
-                                        color: #38bdf8;
-                                        border: 1px solid
-                                            rgba(56, 189, 248, 0.15);
-                                    "
-                                    >Self-host</span
-                                >
-                                <span
-                                    style="
-                                        font-size: 11px;
-                                        padding: 3px 10px;
-                                        background: rgba(245, 158, 11, 0.08);
+                                        background: rgba(245, 158, 11, 0.05);
                                         color: #f59e0b;
                                         border: 1px solid
-                                            rgba(245, 158, 11, 0.15);
+                                            rgba(245, 158, 11, 0.08);
                                     "
                                     >Cloud</span
                                 >
@@ -983,7 +831,6 @@
                 </div>
             </section>
 
-            <!-- FOOTER -->
             <footer
                 style="
                     padding: 36px 48px;
